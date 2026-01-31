@@ -1,0 +1,886 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- tailwind link -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;0,700;1,100..900&family=Exo:ital@0;1&family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rajdhani:wght@300;400;500;600;700&display=swap');
+
+
+    * {
+      font-family: "Poppins", sans-serif;
+
+    }
+  </style>
+</head>
+
+<body class="bg-[#FFFFFF]">
+  <header>
+    <!-- nav-01 -->
+    <div
+      class="flex items-center lg:justify-between  justify-between  container mx-auto px-8 lg:px-8 py-2  border-t-4 border-[#EC233B] ">
+      <div class=" lg:flex items-center  gap-2 ">
+        <img src="asset/Map Pin.png" alt="">
+        <p class="text-[#666666]  lg:text-sm hidden lg:block">Limited-Time Offers : Mid-Summer Season Sale On Selected
+          Items - <span class="font-medium">SHOP NOW</span></p>
+      </div>
+      <div class="flex items-center gap-3   text-gray-400  text-sm">
+
+        <p
+          class="border-r border-gray-400 pr-5 hidden hover:text-[#EC233B] duration-300 cursor-pointer lg:block text-[#666666] ">
+          Help Center</p>
+        <p
+          class="border-r border-gray-400 pr-5 hover:text-[#EC233B] duration-300 cursor-pointer hidden lg:block text-[#666666] ">
+          Order Tracking</p>
+        <div class="border-r border-gray-400 pr-5   flex items-center gap-1">
+          <img src="image/1.jpg" alt="">
+          <p class="text-[#666666]">English <i class="fa-solid fa-angle-down"></i></p>
+        </div>
+        <p class="border-r border-gray-400 pr-3 hidden lg:block  text-[#666666]">$ USD <i
+            class="fa-solid fa-angle-down"></i></p>
+      </div>
+    </div>
+    <!-- nav-02  -->
+    <div
+      class="flex items-center justify-between container mx-auto px-8 lg:px-8 lg:pt-5 py-2 border-t border-gray-200 ">
+      <div>
+        <img class="w-25 lg:w-40" src="image/logo-1753509866.svg" alt="">
+      </div>
+      <div class="flex items-center rounded-l-md rounded-r-md   border-[2px] border-[#D2D2D2]  justify-between gap-50 ">
+        <div class="flex items-center lg:pl-3 gap-2  p-2  ">
+          <div class="border-r border-gray-400 pr-5   ">
+            <p class=" text-[#111111]">All Categories <i class="fa-solid text-[#b0b0b0] fa-angle-down"></i></p>
+          </div>
+          <p class="text-[c] text-sm">Search Product here...</p>
+        </div>
+        <div class="px-4 py-2 bg-[#EC233B] hidden lg:block rounded-r-md">
+          <i class="fa-solid fa-magnifying-glass text-white "></i>
+        </div>
+      </div>
+
+      <div class="flex items-center gap-3">
+        <i class="fa-solid text-[26px] text-[#373737] fa-user"></i>
+        <i class="fa-solid text-[26px] text-[#373737] fa-arrows-up-down-left-right"></i>
+        <i class="fa-regular text-[26px] text-[#373737] fa-heart"></i>
+        <i class="fa-solid text-[26px] text-[#373737] fa-cart-shopping"></i>
+
+      </div>
+
+    </div>
+    <!--  nav-03 -->
+    <div class="flex items-center lg:justify-between justify-between  lg:px-8 px-8 container mx-auto mt-2">
+      <div class="flex items-center gap-8">
+        <div class=" bg-[#EC233B] rounded-md px-5 py-3 text-[#FFFFFF]  flex items-center  gap-2"><i
+            class="fa-solid fa-bars"></i>
+          <p>Shop By Categories</p>
+        </div>
+
+        <div class="lg:flex hidden  items-center gap-5 text-gray-600 font-medium ">
+          <div class="flex items-center gap-1"><a class="text-[#EC233B] " href="index.html">Home </a>
+
+          </div>
+          <div class="flex items-center gap-1 hover:text-[#EC233B] cursor-pointer text-[15px]"> <a href="Shop.html">Shop
+              <i class="fa-solid fa-angle-down"></i></a>
+
+          </div>
+          <div class="flex text-[14px] items-center gap-1 hover:text-[#EC233B]text-[15px] cursor-pointer">
+            <p>Categories <i class="fa-solid fa-angle-down"></i></p>
+
+          </div>
+          <div class="flex items-center gap-1 hover:text-[#EC233B] text-[15px] cursor-pointer">
+            <p>Products <i class="fa-solid fa-angle-down"></i></p>
+
+          </div>
+          <p class="hover:text-[#EC233B] cursor-pointer text-[15px]">Top Deals <i class="fa-solid fa-angle-down"></i>
+          </p>
+          <p class="hover:text-[#EC233B] cursor-pointer text-[15px]">Elements <i class="fa-solid fa-angle-down"></i></p>
+        </div>
+      </div>
+      <div class="lg:flex items-center gap-2">
+
+        <p class="hidden lg:block">Hot Details</p>
+      </div>
+    </div>
+  </header>
+  <main>
+    <!-- first section -->
+    <section class="container mx-auto px-8 mt-7 mb-4 bg-[#F7F7F7] py-8 ">
+      <div class="  flex items-center justify-between ">
+        <h1 class="text-[#111111] text-2xl font-semibold ">Shop</h1>
+        <p class="text-[#666666] text-sm">Home / Shop</p>
+      </div>
+    </section>
+    <!-- second Section -->
+    <section class="container mx-auto flex  gap-5 px-8 mt-7 mb-4">
+      <!-- left side -->
+      <div class="w-[850px]">
+        <div class="border border-gray-300 p-5 rounded ">
+          <h1 class="text-[#111111] text-2xl font-semibold  border-b-2 pb-3 border-[#EC233B]">Home</h1>
+          <div class="flex items-center justify-between mt-2">
+            <p class="text-[#111111] text-sm">Shop</p>
+            <p class="text-[#111111] text-2xl">+</p>
+          </div>
+          <div class="flex items-center justify-between">
+            <p class="text-[#111111] text-sm">Accessories</p>
+            <p class="text-[#111111] text-2xl">+</p>
+          </div>
+          <div class="flex items-center justify-between">
+            <p class="text-[#111111] text-sm">Sensors</p>
+            <p class="text-[#111111] text-2xl">+</p>
+          </div>
+          <div class="flex items-center justify-between">
+            <p class="text-[#111111] text-sm">Auto Parts</p>
+            <p class="text-[#111111] text-2xl">+</p>
+          </div>
+          <div class="flex items-center justify-between">
+            <p class="text-[#111111] text-sm">Wheel</p>
+            <p class="text-[#111111] text-2xl">+</p>
+          </div>
+          <div class="flex items-center justify-between">
+            <p class="text-[#111111] text-sm">Body Parts</p>
+            <p class="text-[#111111] text-2xl">+</p>
+          </div>
+          <div class="flex items-center justify-between">
+            <p class="text-[#111111] text-sm">Gauges</p>
+            <p class="text-[#111111] text-2xl">+</p>
+          </div>
+
+        </div>
+        <div class="border border-gray-300 p-5 rounded  my-3">
+          <h1 class="text-[#111111] text-2xl font-semibold  border-b-2 pb-3 border-[#EC233B]">Filter By</h1>
+          <p class="text-[#111111] text-1xl my-3 font-medium">Categories</p>
+          <div class="flex items-center gap-2">
+            <div class="w-5 h-5 rounded-sm border border-gray-400 "></div>
+            <p class="text-sm text-[#111111]">Air Filters (12)</p>
+          </div>
+          <div class="flex items-center gap-2 my-3">
+            <div class="w-5 h-5 rounded-sm border border-gray-400 "></div>
+            <p class="text-sm text-[#111111]">Control Arms(8)</p>
+          </div>
+          <div class="flex items-center gap-2">
+            <div class="w-5 h-5 rounded-sm border border-gray-400 "></div>
+            <p class="text-sm text-[#111111]">Engine Oil (13)</p>
+          </div>
+          <div class="flex items-center gap-2 my-3">
+            <div class="w-5 h-5 rounded-sm border border-gray-400 "></div>
+            <p class="text-sm text-[#111111]">Wiring Harnesses (16)</p>
+          </div>
+          <p class="text-[#111111] text-1xl mt-7 mb-4 font-medium">Availability</p>
+          <div class="flex items-center gap-2 my-3">
+            <div class="w-5 h-5 rounded-sm border border-gray-400 "></div>
+            <p class="text-sm text-[#111111]">In Stock (23)</p>
+          </div>
+          <div class="flex items-center gap-2 my-3">
+            <div class="w-5 h-5 rounded-sm border border-gray-400 "></div>
+            <p class="text-sm text-[#111111]">not Available (1)</p>
+          </div>
+          <p class="text-[#111111] text-1xl mt-7 mb-4 font-medium">Price</p>
+          <p class="text-[#111111] text-sm">$13.00 - $186.00</p>
+          <p class="text-[#111111] text-1xl mt-7 mb-4 font-medium">Size</p>
+          <div class="flex items-center gap-2">
+            <div class="w-5 h-5 rounded-sm border border-gray-400 "></div>
+            <p class="text-sm text-[#111111]">Small (5)</p>
+          </div>
+          <div class="flex items-center gap-2 my-3">
+            <div class="w-5 h-5 rounded-sm border border-gray-400 "></div>
+            <p class="text-sm text-[#111111]">Medium(5)</p>
+          </div>
+          <div class="flex items-center gap-2">
+            <div class="w-5 h-5 rounded-sm border border-gray-400 "></div>
+            <p class="text-sm text-[#111111]">Large (5)</p>
+          </div>
+
+          <p class="text-[#111111] text-1xl mt-7 mb-4 font-medium">Brand</p>
+          <div class="flex items-center gap-2">
+            <div class="w-5 h-5 rounded-sm border border-gray-400 "></div>
+            <p class="text-sm text-[#111111]">Air Filters (12)</p>
+          </div>
+          <div class="flex items-center gap-2 my-3">
+            <div class="w-5 h-5 rounded-sm border border-gray-400 "></div>
+            <p class="text-sm text-[#111111]">Control Arms(8)</p>
+          </div>
+          <div class="flex items-center gap-2">
+            <div class="w-5 h-5 rounded-sm border border-gray-400 "></div>
+            <p class="text-sm text-[#111111]">Engine Oil (13)</p>
+          </div>
+          <div class="flex items-center gap-2 my-3">
+            <div class="w-5 h-5 rounded-sm border border-gray-400 "></div>
+            <p class="text-sm text-[#111111]">Wiring Harnesses (16)</p>
+          </div>
+          <div class="flex items-center gap-2 my-3">
+            <div class="w-5 h-5 rounded-sm border border-gray-400 "></div>
+            <p class="text-sm text-[#111111]">In Stock (23)</p>
+          </div>
+          <div class="flex items-center gap-2 my-3">
+            <div class="w-5 h-5 rounded-sm border border-gray-400 "></div>
+            <p class="text-sm text-[#111111]">not Available (1)</p>
+          </div>
+          <div class="flex items-center gap-2 my-3">
+            <div class="w-5 h-5 rounded-sm border border-gray-400 "></div>
+            <p class="text-sm text-[#111111]">not Available (1)</p>
+          </div>
+
+        </div>
+      </div>
+      <!-- right side -->
+      <div>
+        <p class="text-[#666666] text-sm">The engine is the heart of every vehicle, and its components work together to
+          generate power and ensure smooth operation. This subcategory includes critical parts such as pistons,
+          camshafts, crankshafts, cylinder heads, timing belts, and engine mounts.</p>
+
+        <h1 class="text-[#111111] text-2xl font-semibold my-9">Subcategories</h1>
+
+        <div class="flex items-center gap-3">
+          <div>
+            <div class="border border-gray-300 hover:border hover:border-[#EC233B] p-10 rounded-md">
+              <p class="text-[#666666] text-lg">No image <br> available</p>
+            </div>
+            <p class="text-[#111111] text-center font-medium my-2">Engine Oil</p>
+          </div>
+          <div>
+            <div class="border border-gray-300 hover:border hover:border-[#EC233B] p-10 rounded-md">
+              <p class="text-[#666666] text-lg">No image <br> available</p>
+            </div>
+            <p class="text-[#111111] text-center font-medium my-2">Air Filters</p>
+          </div>
+          <div>
+            <div class="border border-gray-300 hover:border hover:border-[#EC233B] p-10 rounded-md">
+              <p class="text-[#666666] text-lg">No image <br> available</p>
+            </div>
+            <p class="text-[#111111] text-center font-medium my-2">Wiring Harnesses</p>
+          </div>
+          <div>
+            <div class="border border-gray-300 hover:border hover:border-[#EC233B] p-10 rounded-md">
+              <p class="text-[#666666] text-lg">No image <br> available</p>
+            </div>
+            <p class="text-[#111111] text-center font-medium my-2">Control Arms</p>
+          </div>
+
+        </div>
+
+        <div class="flex items-center justify-between my-8">
+          <div class="flex items-center gap-3">
+            <div class="w-9 h-9 rounded-sm  bg-[#EC233B]  p-2">
+              <i class="fa-solid text-white text-center fa-bars"></i>
+            </div>
+            <div class="w-9 h-9 rounded-sm  border border-gray-400 p-2">
+              <i class="fa-solid  text-center rotate-90 fa-bars"></i>
+            </div>
+            <div class="w-9 h-9 rounded-sm border border-gray-400   p-2">
+              <i class="fa-solid rotate-180  text-center fa-bars"></i>
+            </div>
+            <p class="text-[#111111] text-sm ">There are 23 Products</p>
+
+          </div>
+          <div class="flex items-center gap-3">
+            <p class="text-sm">Short by :</p>
+            <p class="w-50 py-2 pl-2 border border-gray-300 rounded-md text-[#666666] text-sm ">Relevance</p>
+          </div>
+        </div>
+        <div class="flex items-center gap-2">
+          <p class="text-[#111111] text-1xl font-medium">Active Filters</p>
+          <p class="bg-[#F0F0F0] py-2 pl-3 w-50 rounded-sm text-[#111111] text-sm">Price: $13.00 - $186.00 X</p>
+        </div>
+
+        <div class=" my-4  grid grid-cols-5 gap-3">
+
+          <div class=" px-4 py-2 border rounded-md border-gray-300">
+            <img class="w-40" src="image/front-brake-disk-brake-pads-for-yamaha-vino.jpg" alt="">
+            <div>
+              <p class="text-[#666666]">StyleHub</p>
+              <h1 class="text-[#111111] text-[15px] font-medium py-1">Front Brake Disk + <br> Brake Pads For</h1>
+              <div class="flex items-center py-1">
+                <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+                <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+                <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+                <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+                <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+                <p>(2)</p>
+              </div>
+              <p class="text-[#EC233B] font-semibold">$ 110.50</p>
+
+              <div
+                class=" hover:bg-[#EC233B] bg-gray-200 text-[#111111] rounded-md w-30 text-sm py-2  hover:text-[#FFFFFF]   my-2  gap-2 uppercase">
+                <p class="text-center">Add To</p>
+              </div>
+            </div>
+          </div>
+          <div class=" px-4 py-2 border rounded-md border-gray-300">
+            <img class="w-40" src="image/front-brake-disk-brake-pads-for-yamaha-vino.jpg" alt="">
+            <div>
+              <p class="text-[#666666]">StyleHub</p>
+              <h1 class="text-[#111111] text-[15px] font-medium py-1">Front Brake Disk + <br> Brake Pads For</h1>
+              <div class="flex items-center py-1">
+                <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+                <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+                <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+                <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+                <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+                <p>(2)</p>
+              </div>
+              <p class="text-[#EC233B] font-semibold">$ 110.50</p>
+
+              <div
+                class=" hover:bg-[#EC233B] bg-gray-200 text-[#111111] rounded-md w-30 text-sm py-2  hover:text-[#FFFFFF]   my-2  gap-2 uppercase">
+                <p class="text-center">Add To</p>
+              </div>
+            </div>
+          </div>
+          <div class=" px-4 py-2 border rounded-md border-gray-300">
+            <img class="w-40" src="image/front-brake-disk-brake-pads-for-yamaha-vino.jpg" alt="">
+            <div>
+              <p class="text-[#666666]">StyleHub</p>
+              <h1 class="text-[#111111] text-[15px] font-medium py-1">Front Brake Disk + <br> Brake Pads For</h1>
+              <div class="flex items-center py-1">
+                <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+                <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+                <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+                <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+                <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+                <p>(2)</p>
+              </div>
+              <p class="text-[#EC233B] font-semibold">$ 110.50</p>
+
+              <div
+                class=" hover:bg-[#EC233B] bg-gray-200 text-[#111111] rounded-md w-30 text-sm py-2  hover:text-[#FFFFFF]   my-2  gap-2 uppercase">
+                <p class="text-center">Add To</p>
+              </div>
+            </div>
+          </div>
+          <div class=" px-4 py-2 border rounded-md border-gray-300">
+            <img class="w-40" src="image/front-brake-disk-brake-pads-for-yamaha-vino.jpg" alt="">
+            <div>
+              <p class="text-[#666666]">StyleHub</p>
+              <h1 class="text-[#111111] text-[15px] font-medium py-1">Front Brake Disk + <br> Brake Pads For</h1>
+              <div class="flex items-center py-1">
+                <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+                <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+                <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+                <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+                <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+                <p>(2)</p>
+              </div>
+              <p class="text-[#EC233B] font-semibold">$ 110.50</p>
+
+              <div
+                class=" hover:bg-[#EC233B] bg-gray-200 text-[#111111] rounded-md w-30 text-sm py-2  hover:text-[#FFFFFF]   my-2  gap-2 uppercase">
+                <p class="text-center">Add To</p>
+              </div>
+            </div>
+          </div>
+          <div class=" px-4 py-2 border rounded-md border-gray-300">
+            <img class="w-40" src="image/front-brake-disk-brake-pads-for-yamaha-vino.jpg" alt="">
+            <div>
+              <p class="text-[#666666]">StyleHub</p>
+              <h1 class="text-[#111111] text-[15px] font-medium py-1">Front Brake Disk + <br> Brake Pads For</h1>
+              <div class="flex items-center py-1">
+                <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+                <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+                <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+                <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+                <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+                <p>(2)</p>
+              </div>
+              <p class="text-[#EC233B] font-semibold">$ 110.50</p>
+
+              <div
+                class=" hover:bg-[#EC233B] bg-gray-200 text-[#111111] rounded-md w-30 text-sm py-2  hover:text-[#FFFFFF]   my-2  gap-2 uppercase">
+                <p class="text-center">Add To</p>
+              </div>
+            </div>
+          </div>
+          <div class=" px-4 py-2 border rounded-md border-gray-300">
+            <img class="w-40" src="image/front-brake-disk-brake-pads-for-yamaha-vino.jpg" alt="">
+            <div>
+              <p class="text-[#666666]">StyleHub</p>
+              <h1 class="text-[#111111] text-[15px] font-medium py-1">Front Brake Disk + <br> Brake Pads For</h1>
+              <div class="flex items-center py-1">
+                <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+                <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+                <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+                <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+                <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+                <p>(2)</p>
+              </div>
+              <p class="text-[#EC233B] font-semibold">$ 110.50</p>
+
+              <div
+                class=" hover:bg-[#EC233B] bg-gray-200 text-[#111111] rounded-md w-30 text-sm py-2  hover:text-[#FFFFFF]   my-2  gap-2 uppercase">
+                <p class="text-center">Add To</p>
+              </div>
+            </div>
+          </div>
+          <div class=" px-4 py-2 border rounded-md border-gray-300">
+            <img class="w-40" src="image/front-brake-disk-brake-pads-for-yamaha-vino.jpg" alt="">
+            <div>
+              <p class="text-[#666666]">StyleHub</p>
+              <h1 class="text-[#111111] text-[15px] font-medium py-1">Front Brake Disk + <br> Brake Pads For</h1>
+              <div class="flex items-center py-1">
+                <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+                <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+                <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+                <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+                <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+                <p>(2)</p>
+              </div>
+              <p class="text-[#EC233B] font-semibold">$ 110.50</p>
+
+              <div
+                class=" hover:bg-[#EC233B] bg-gray-200 text-[#111111] rounded-md w-30 text-sm py-2  hover:text-[#FFFFFF]   my-2  gap-2 uppercase">
+                <p class="text-center">Add To</p>
+              </div>
+            </div>
+          </div>
+          <div class=" px-4 py-2 border rounded-md border-gray-300">
+            <img class="w-40" src="image/front-brake-disk-brake-pads-for-yamaha-vino.jpg" alt="">
+            <div>
+              <p class="text-[#666666]">StyleHub</p>
+              <h1 class="text-[#111111] text-[15px] font-medium py-1">Front Brake Disk + <br> Brake Pads For</h1>
+              <div class="flex items-center py-1">
+                <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+                <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+                <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+                <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+                <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+                <p>(2)</p>
+              </div>
+              <p class="text-[#EC233B] font-semibold">$ 110.50</p>
+
+              <div
+                class=" hover:bg-[#EC233B] bg-gray-200 text-[#111111] rounded-md w-30 text-sm py-2  hover:text-[#FFFFFF]   my-2  gap-2 uppercase">
+                <p class="text-center">Add To</p>
+              </div>
+            </div>
+          </div>
+          <div class=" px-4 py-2 border rounded-md border-gray-300">
+            <img class="w-40" src="image/front-brake-disk-brake-pads-for-yamaha-vino.jpg" alt="">
+            <div>
+              <p class="text-[#666666]">StyleHub</p>
+              <h1 class="text-[#111111] text-[15px] font-medium py-1">Front Brake Disk + <br> Brake Pads For</h1>
+              <div class="flex items-center py-1">
+                <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+                <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+                <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+                <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+                <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+                <p>(2)</p>
+              </div>
+              <p class="text-[#EC233B] font-semibold">$ 110.50</p>
+
+              <div
+                class=" hover:bg-[#EC233B] bg-gray-200 text-[#111111] rounded-md w-30 text-sm py-2  hover:text-[#FFFFFF]   my-2  gap-2 uppercase">
+                <p class="text-center">Add To</p>
+              </div>
+            </div>
+          </div>
+          <div class=" px-4 py-2 border rounded-md border-gray-300">
+            <img class="w-40" src="image/front-brake-disk-brake-pads-for-yamaha-vino.jpg" alt="">
+            <div>
+              <p class="text-[#666666]">StyleHub</p>
+              <h1 class="text-[#111111] text-[15px] font-medium py-1">Front Brake Disk + <br> Brake Pads For</h1>
+              <div class="flex items-center py-1">
+                <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+                <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+                <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+                <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+                <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+                <p>(2)</p>
+              </div>
+              <p class="text-[#EC233B] font-semibold">$ 110.50</p>
+
+              <div
+                class=" hover:bg-[#EC233B] bg-gray-200 text-[#111111] rounded-md w-30 text-sm py-2  hover:text-[#FFFFFF]   my-2  gap-2 uppercase">
+                <p class="text-center">Add To</p>
+              </div>
+            </div>
+          </div>
+          <div class=" px-4 py-2 border rounded-md border-gray-300">
+            <img class="w-40" src="image/front-brake-disk-brake-pads-for-yamaha-vino.jpg" alt="">
+            <div>
+              <p class="text-[#666666]">StyleHub</p>
+              <h1 class="text-[#111111] text-[15px] font-medium py-1">Front Brake Disk + <br> Brake Pads For</h1>
+              <div class="flex items-center py-1">
+                <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+                <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+                <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+                <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+                <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+                <p>(2)</p>
+              </div>
+              <p class="text-[#EC233B] font-semibold">$ 110.50</p>
+
+              <div
+                class=" hover:bg-[#EC233B] bg-gray-200 text-[#111111] rounded-md w-30 text-sm py-2  hover:text-[#FFFFFF]   my-2  gap-2 uppercase">
+                <p class="text-center">Add To</p>
+              </div>
+            </div>
+          </div>
+          <div class=" px-4 py-2 border rounded-md border-gray-300">
+            <img class="w-40" src="image/front-brake-disk-brake-pads-for-yamaha-vino.jpg" alt="">
+            <div>
+              <p class="text-[#666666]">StyleHub</p>
+              <h1 class="text-[#111111] text-[15px] font-medium py-1">Front Brake Disk + <br> Brake Pads For</h1>
+              <div class="flex items-center py-1">
+                <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+                <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+                <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+                <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+                <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+                <p>(2)</p>
+              </div>
+              <p class="text-[#EC233B] font-semibold">$ 110.50</p>
+
+              <div
+                class=" hover:bg-[#EC233B] bg-gray-200 text-[#111111] rounded-md w-30 text-sm py-2  hover:text-[#FFFFFF]   my-2  gap-2 uppercase">
+                <p class="text-center">Add To</p>
+              </div>
+            </div>
+          </div>
+          <div class=" px-4 py-2 border rounded-md border-gray-300">
+            <img class="w-40" src="image/front-brake-disk-brake-pads-for-yamaha-vino.jpg" alt="">
+            <div>
+              <p class="text-[#666666]">StyleHub</p>
+              <h1 class="text-[#111111] text-[15px] font-medium py-1">Front Brake Disk + <br> Brake Pads For</h1>
+              <div class="flex items-center py-1">
+                <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+                <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+                <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+                <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+                <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+                <p>(2)</p>
+              </div>
+              <p class="text-[#EC233B] font-semibold">$ 110.50</p>
+
+              <div
+                class=" hover:bg-[#EC233B] bg-gray-200 text-[#111111] rounded-md w-30 text-sm py-2  hover:text-[#FFFFFF]   my-2  gap-2 uppercase">
+                <p class="text-center">Add To</p>
+              </div>
+            </div>
+          </div>
+          <div class=" px-4 py-2 border rounded-md border-gray-300">
+            <img class="w-40" src="image/front-brake-disk-brake-pads-for-yamaha-vino.jpg" alt="">
+            <div>
+              <p class="text-[#666666]">StyleHub</p>
+              <h1 class="text-[#111111] text-[15px] font-medium py-1">Front Brake Disk + <br> Brake Pads For</h1>
+              <div class="flex items-center py-1">
+                <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+                <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+                <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+                <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+                <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+                <p>(2)</p>
+              </div>
+              <p class="text-[#EC233B] font-semibold">$ 110.50</p>
+
+              <div
+                class=" hover:bg-[#EC233B] bg-gray-200 text-[#111111] rounded-md w-30 text-sm py-2  hover:text-[#FFFFFF]   my-2  gap-2 uppercase">
+                <p class="text-center">Add To</p>
+              </div>
+            </div>
+          </div>
+          <div class=" px-4 py-2 border rounded-md border-gray-300">
+            <img class="w-40" src="image/front-brake-disk-brake-pads-for-yamaha-vino.jpg" alt="">
+            <div>
+              <p class="text-[#666666]">StyleHub</p>
+              <h1 class="text-[#111111] text-[15px] font-medium py-1">Front Brake Disk + <br> Brake Pads For</h1>
+              <div class="flex items-center py-1">
+                <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+                <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+                <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+                <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+                <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+                <p>(2)</p>
+              </div>
+              <p class="text-[#EC233B] font-semibold">$ 110.50</p>
+
+              <div
+                class=" hover:bg-[#EC233B] bg-gray-200 text-[#111111] rounded-md w-30 text-sm py-2  hover:text-[#FFFFFF]   my-2  gap-2 uppercase">
+                <p class="text-center">Add To</p>
+              </div>
+            </div>
+          </div>
+          <div class=" px-4 py-2 border rounded-md border-gray-300">
+            <img class="w-40" src="image/front-brake-disk-brake-pads-for-yamaha-vino.jpg" alt="">
+            <div>
+              <p class="text-[#666666]">StyleHub</p>
+              <h1 class="text-[#111111] text-[15px] font-medium py-1">Front Brake Disk + <br> Brake Pads For</h1>
+              <div class="flex items-center py-1">
+                <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+                <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+                <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+                <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+                <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+                <p>(2)</p>
+              </div>
+              <p class="text-[#EC233B] font-semibold">$ 110.50</p>
+
+              <div
+                class=" hover:bg-[#EC233B] bg-gray-200 text-[#111111] rounded-md w-30 text-sm py-2  hover:text-[#FFFFFF]   my-2  gap-2 uppercase">
+                <p class="text-center">Add To</p>
+              </div>
+            </div>
+          </div>
+          <div class=" px-4 py-2 border rounded-md border-gray-300">
+            <img class="w-40" src="image/front-brake-disk-brake-pads-for-yamaha-vino.jpg" alt="">
+            <div>
+              <p class="text-[#666666]">StyleHub</p>
+              <h1 class="text-[#111111] text-[15px] font-medium py-1">Front Brake Disk + <br> Brake Pads For</h1>
+              <div class="flex items-center py-1">
+                <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+                <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+                <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+                <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+                <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+                <p>(2)</p>
+              </div>
+              <p class="text-[#EC233B] font-semibold">$ 110.50</p>
+
+              <div
+                class=" hover:bg-[#EC233B] bg-gray-200 text-[#111111] rounded-md w-30 text-sm py-2  hover:text-[#FFFFFF]   my-2  gap-2 uppercase">
+                <p class="text-center">Add To</p>
+              </div>
+            </div>
+          </div>
+          <div class=" px-4 py-2 border rounded-md border-gray-300">
+            <img class="w-40" src="image/front-brake-disk-brake-pads-for-yamaha-vino.jpg" alt="">
+            <div>
+              <p class="text-[#666666]">StyleHub</p>
+              <h1 class="text-[#111111] text-[15px] font-medium py-1">Front Brake Disk + <br> Brake Pads For</h1>
+              <div class="flex items-center py-1">
+                <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+                <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+                <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+                <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+                <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+                <p>(2)</p>
+              </div>
+              <p class="text-[#EC233B] font-semibold">$ 110.50</p>
+
+              <div
+                class=" hover:bg-[#EC233B] bg-gray-200 text-[#111111] rounded-md w-30 text-sm py-2  hover:text-[#FFFFFF]   my-2  gap-2 uppercase">
+                <p class="text-center">Add To</p>
+              </div>
+            </div>
+          </div>
+          <div class=" px-4 py-2 border rounded-md border-gray-300">
+            <img class="w-40" src="image/front-brake-disk-brake-pads-for-yamaha-vino.jpg" alt="">
+            <div>
+              <p class="text-[#666666]">StyleHub</p>
+              <h1 class="text-[#111111] text-[15px] font-medium py-1">Front Brake Disk + <br> Brake Pads For</h1>
+              <div class="flex items-center py-1">
+                <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+                <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+                <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+                <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+                <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+                <p>(2)</p>
+              </div>
+              <p class="text-[#EC233B] font-semibold">$ 110.50</p>
+
+              <div
+                class=" hover:bg-[#EC233B] bg-gray-200 text-[#111111] rounded-md w-30 text-sm py-2  hover:text-[#FFFFFF]   my-2  gap-2 uppercase">
+                <p class="text-center">Add To</p>
+              </div>
+            </div>
+          </div>
+          <div class=" px-4 py-2 border rounded-md border-gray-300">
+            <img class="w-40" src="image/front-brake-disk-brake-pads-for-yamaha-vino.jpg" alt="">
+            <div>
+              <p class="text-[#666666]">StyleHub</p>
+              <h1 class="text-[#111111] text-[15px] font-medium py-1">Front Brake Disk + <br> Brake Pads For</h1>
+              <div class="flex items-center py-1">
+                <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+                <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+                <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+                <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+                <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+                <p>(2)</p>
+              </div>
+              <p class="text-[#EC233B] font-semibold">$ 110.50</p>
+
+              <div
+                class=" hover:bg-[#EC233B] bg-gray-200 text-[#111111] rounded-md w-30 text-sm py-2  hover:text-[#FFFFFF]   my-2  gap-2 uppercase">
+                <p class="text-center">Add To</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="  flex items-center justify-between my-3 ">
+          <h1 class="text-[#111111] text-sm  ">Showing 1-20 of 24 item(s)</h1>
+          <div class="flex items-center gap-2">
+            <div class="w-9 h-9 pt-2 rounded-md bg-[#FF014F] cursor-pointer   ">
+              <p class="text-center  text-white">1</p>
+            </div>
+            <div class="w-9 h-9 pt-2  rounded-md  cursor-pointer  bg-[#e2e0e0] ">
+              <p class="text-center text-[#666666]">2</p>
+            </div>
+            <div class="w-9 h-9 pt-2 pl-2 rounded-md  cursor-pointer  bg-[#e1e0e0] ">
+              <i class="fa-solid fa-arrow-right text-center text-[#666666] "></i>
+            </div>
+          </div>
+        </div>
+        <div class="border border-gray-300 rounded-md p-4">
+          <p class="text-[#666666] text-sm my-3">The transmission and drivetrain are responsible for transferring power
+            from the engine to the wheels, enabling movement and gear control. This category includes automatic and
+            manual transmissions, clutches, axles, driveshafts, differentials, and CV joints. These components ensure
+            that the vehicle responds smoothly to acceleration and gear changes while maintaining fuel efficiency and
+            torque delivery. A well-maintained drivetrain is key to seamless driving performance and handling.</p>
+          <div class="flex items-center gap-2 my-5">
+            <img class="rounded-md w-105" src="image/extended-01.jpg" alt="">
+            <img class="rounded-md w-105" src="image/extended-02.jpg" alt="">
+          </div>
+
+          <p class="text-[#666666] text-sm my-3">The braking system is essential for vehicle safety, allowing the driver
+            to slow down, stop, or maintain control under various driving conditions. It includes brake pads, rotors,
+            calipers, drums, master cylinders, and ABS modules. Each component plays a vital role in providing reliable
+            stopping power and maintaining stability during braking. Regular inspection and replacement of worn brake
+            parts are crucial for driver safety and system effectiveness.</p>
+          <div class="flex items-center gap-2 my-2">
+            <div class="w-2 h-2 bg-[#666666]  rounded-full"></div>
+            <p class="text-[#666666] text-sm">Cabin components that enhance comfort, safety, and driver control.</p>
+          </div>
+          <div class="flex items-center gap-2">
+            <div class="w-2 h-2 bg-[#666666]  rounded-full"></div>
+            <p class="text-[#666666] text-sm">Includes bumpers, mirrors, fenders, grilles, and door components.</p>
+          </div>
+          <div class="flex items-center gap-2 my-2">
+            <div class="w-2 h-2 bg-[#666666]  rounded-full"></div>
+            <p class="text-[#666666] text-sm">Components include mufflers, catalytic converters, and oxygen sensors.</p>
+          </div>
+          <div class="flex items-center gap-2 ">
+            <div class="w-2 h-2 bg-[#666666]  rounded-full"></div>
+            <p class="text-[#666666] text-sm">Helps meet environmental standards while improving engine efficiency</p>
+          </div>
+          <div class="flex items-center gap-2 my-2">
+            <div class="w-2 h-2 bg-[#666666]  rounded-full"></div>
+            <p class="text-[#666666] text-sm">Designed for functionality, ergonomics, and passenger experience</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="bg-[#EC233B] flex items-center gap-10  container mx-auto px-8 py-9 pl-40">
+      <div class="flex items-center gap-3 border-r border-[#ffffff] pr-20">
+        <i class="fa-solid text-white text-4xl fa-circle-dollar-to-slot"></i>
+        <div class="text-[#ffffff]">
+          <h1>
+            Money Back Guarantee
+          </h1>
+          <p class="text-sm">Back returns in 7 days</p>
+        </div>
+      </div>
+      <div class="flex items-center gap-3 border-r border-[#ffffff] pr-20">
+        <i class="fa-solid text-white text-4xl fa-circle-dollar-to-slot"></i>
+        <div class="text-[#ffffff]">
+          <h1>
+            Offers $ Discount
+          </h1>
+          <p class="text-sm">Back returns in 7 days</p>
+        </div>
+      </div>
+      <div class="flex items-center gap-3 border-r border-[#ffffff] pr-20">
+        <i class="fa-solid text-white text-4xl fa-circle-dollar-to-slot"></i>
+        <div class="text-[#ffffff]">
+          <h1>
+            Worlwide Shipping
+          </h1>
+          <p class="text-sm">Back returns in 7 days</p>
+        </div>
+      </div>
+    </div>
+
+  </main>
+  <footer class="bg-[#212529]">
+    <div class="container    mx-auto px-8 py-8">
+      <div class="flex items-center justify-between pb-9  pt-7 ">
+        <!-- first -->
+        <div class="text-[#DFDFE0] text-[13px] mt-2">
+          <h1 class=" font-semibold text-[#ffffff] text-[20px]">Contact Us</h1>
+          <p class="  cursor-pointer pt-4">Autogear Demo <br>
+            507-Union Trade Centre, USA <br> 12345, Beside the Sun point <br> land. <br>
+            United States</p>
+
+          <p class="  cursor-pointer">Email us: admin@example.com</p>
+          <div class="flex items-center gap-1 mt-4"> <img src="image/app.png" alt=""><img src="image/google.png" alt="">
+          </div>
+        </div>
+        <!-- second -->
+        <div class="text-[#DFDFE0] text-[13px]">
+          <h1 class="pb-6 font-semibold text-[#ffffff] text-[20px]">Products</h1>
+          <p class=" cursor-pointer">Prices Drops</p>
+          <p class="py-2  cursor-pointer">New Products</p>
+          <p class=" cursor-pointer">Best Sellers</p>
+          <p class="py-2  cursor-pointer">Site Map </p>
+          <p class=" cursor-pointer">Stores</p>
+          <p class=" cursor-pointer py-2">GearBox</p>
+        </div>
+        <div class="text-[#DFDFE0] text-[13px]">
+          <h1 class="pb-6 font-semibold text-[#ffffff] text-[20px]">Our Company</h1>
+          <p class=" cursor-pointer">Delivery</p>
+          <p class="py-2   cursor-pointer">Legal Notice</p>
+          <p class="  cursor-pointer">Terms & Condition</p>
+          <p class="py-2  cursor-pointer">SEcure Payment </p>
+          <p class="  cursor-pointer">Contact Us</p>
+          <p class="  cursor-pointer py-2">About Us</p>
+        </div>
+        <div class="text-[#DFDFE0] text-[13px]">
+          <h1 class="pb-6 font-semibold text-[#ffffff] text-[20px]">Your Account</h1>
+          <p class=" cursor-pointer">Order Tracking</p>
+          <p class="py-2   cursor-pointer">Sign In</p>
+          <p class="  cursor-pointer">Create Account</p>
+          <p class="py-2   cursor-pointer">Vouchers </p>
+          <p class="  cursor-pointer">Credit Slip</p>
+          <p class="  cursor-pointer py-2">wishlist</p>
+        </div>
+        <!-- third -->
+        <div class="">
+          <h1 class="pb-6 font-semibold pt-2 text-[#ffffff] text-[20px]">Get Our Latest Update</h1>
+          <p class="text-[#DFDFE0]  cursor-pointer  text-[13px]">Subscribe to our latest newsletter <br> discount <br>
+          </p>
+          <p class="text-[#DFDFE0] py-2 text-[13px]">get news about special</p>
+          <p class="py-2  text-[#DFDFE0] text-[13px]  cursor-pointer">Call us: +00 123-456-789</p>
+          <p class=" text-[#DFDFE0] text-[13px] ">3891 Ranchview Dr. Richardson</p>
+
+          <p class="py-2  text-[#DFDFE0] text-sm cursor-pointer">Vouchers </p>
+
+
+
+
+        </div>
+      </div>
+      <div class="border-t border-gray-500 flex items-center justify-between pt-2 pb-7">
+        <div class="flex items-center gap-4 py-2 mt-4">
+          <div class="w-7 h-7 pl-1.5 rounded-full hover:bg-[#FF014F] cursor-pointer  bg-[#ffffff] ">
+            <i class="fa-brands text-[#302f2f] fa-instagram text-[11px]"></i>
+          </div>
+          <div class="w-7 h-7 pl-1.5 rounded-full hover:bg-[#FF014F] cursor-pointer  bg-[#ffffff] ">
+            <i class="fa-brands text-[#302f2f]  fa-linkedin-in text-[11px]"></i>
+          </div>
+          <div class="w-7 h-7 pl-1.5 rounded-full hover:bg-[#FF014F] cursor-pointer  bg-[#ffffff] ">
+            <i class="fa-brands text-[#302f2f] fa-twitter text-[11px] "></i>
+          </div>
+          <div class="w-7 h-7 pl-1.5 rounded-full hover:bg-[#FF014F] cursor-pointer  bg-[#ffffff] ">
+            <i class="fa-brands text-[#302f2f]  fa-facebook-f text-[11px]"></i>
+          </div>
+
+
+        </div>
+        <div>
+          <p class="text-[#DFDFE0] text-[13px]">Copyright © Autogear. All Rights Reserved</p>
+        </div>
+        <div>
+          <img src="image/payment-all-6.png" alt="">
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

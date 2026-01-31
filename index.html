@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>prrithwi-2</title>
+  <!-- tailwind link -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;0,700;1,100..900&family=Exo:ital@0;1&family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rajdhani:wght@300;400;500;600;700&display=swap');
+
+
+    * {
+      font-family: "Poppins", sans-serif;
+
+    }
+  </style>
+</head>
+
+<body class="bg-[#FFFFFF]">
+  <header>
+    <!-- nav-01 -->
+    <div
+      class="flex items-center lg:justify-between  justify-between  container mx-auto px-8 lg:px-8 py-2  border-t-4 border-[#EC233B] ">
+      <div class=" lg:flex items-center  gap-2 ">
+        <img src="asset/Map Pin.png" alt="">
+        <p class="text-[#666666]  lg:text-sm hidden lg:block">Limited-Time Offers : Mid-Summer Season Sale On Selected
+          Items - <span class="font-medium">SHOP NOW</span></p>
+      </div>
+      <div class="flex items-center gap-3   text-gray-400  text-sm">
+
+        <p
+          class="border-r border-gray-400 pr-5 hidden hover:text-[#EC233B] duration-300 cursor-pointer lg:block text-[#666666] ">
+          Help Center</p>
+        <p
+          class="border-r border-gray-400 pr-5 hover:text-[#EC233B] duration-300 cursor-pointer hidden lg:block text-[#666666] ">
+          Order Tracking</p>
+        <div class="border-r border-gray-400 pr-5   flex items-center gap-1">
+          <img src="image/1.jpg" alt="">
+          <p class="text-[#666666]">English <i class="fa-solid fa-angle-down"></i></p>
+        </div>
+        <p class="border-r border-gray-400 pr-3 hidden lg:block  text-[#666666]">$ USD <i
+            class="fa-solid fa-angle-down"></i></p>
+      </div>
+    </div>
+    <!-- nav-02  -->
+    <div
+      class="flex items-center justify-between container mx-auto px-8 lg:px-8 lg:pt-5 py-2 border-t border-gray-200 ">
+      <div>
+        <img class="w-25 lg:w-40" src="image/logo-1753509866.svg" alt="">
+      </div>
+      <div class="flex items-center rounded-l-md rounded-r-md   border-[2px] border-[#D2D2D2]  justify-between gap-50 ">
+        <div class="flex items-center lg:pl-3 gap-2  p-2  ">
+          <div class="border-r border-gray-400 pr-5   ">
+            <p class=" text-[#111111]">All Categories <i class="fa-solid text-[#b0b0b0] fa-angle-down"></i></p>
+          </div>
+          <p class="text-[c] text-sm">Search Product here...</p>
+        </div>
+        <div class="px-4 py-2 bg-[#EC233B] hidden lg:block rounded-r-md">
+          <i class="fa-solid fa-magnifying-glass text-white "></i>
+        </div>
+      </div>
+
+      <div class="flex items-center gap-3">
+        <i class="fa-solid text-[26px] text-[#373737] fa-user"></i>
+        <i class="fa-solid text-[26px] text-[#373737] fa-arrows-up-down-left-right"></i>
+        <i class="fa-regular text-[26px] text-[#373737] fa-heart"></i>
+        <i class="fa-solid text-[26px] text-[#373737] fa-cart-shopping"></i>
+
+      </div>
+
+    </div>
+    <!--  nav-03 -->
+    <div class="flex items-center lg:justify-between justify-between  lg:px-8 px-8 container mx-auto my-2">
+      <div class="flex items-center gap-8">
+        <div class=" bg-[#EC233B] rounded-md px-5 py-3 text-[#FFFFFF]  flex items-center  gap-2"><i
+            class="fa-solid fa-bars"></i>
+          <p>Shop By Categories</p>
+        </div>
+
+        <div class="lg:flex hidden  items-center gap-5 text-gray-600 font-medium ">
+          <div class="flex items-center gap-1">
+            <p class="text-[#EC233B] cursor-pointer">Home </p>
+
+          </div>
+          <div class="flex items-center gap-1 hover:text-[#EC233B] cursor-pointer text-[15px]"> <a href="Shop.html">Shop
+              <i class="fa-solid fa-angle-down"></i></a>
+
+          </div>
+          <div class="flex text-[14px] items-center gap-1 hover:text-[#EC233B]text-[15px] cursor-pointer">
+            <p>Categories <i class="fa-solid fa-angle-down"></i></p>
+
+          </div>
+          <div class="flex items-center gap-1 hover:text-[#EC233B] text-[15px] cursor-pointer">
+            <p>Products <i class="fa-solid fa-angle-down"></i></p>
+
+          </div>
+          <p class="hover:text-[#EC233B] cursor-pointer text-[15px]">Top Deals <i class="fa-solid fa-angle-down"></i>
+          </p>
+          <p class="hover:text-[#EC233B] cursor-pointer text-[15px]">Elements <i class="fa-solid fa-angle-down"></i></p>
+        </div>
+      </div>
+      <div class="lg:flex items-center gap-2">
+
+        <p class="hidden lg:block">Hot Details</p>
+      </div>
+    </div>
+  </header>
+  <main>
+    <!-- first hero section -->
+    <section class=" lg:justify-between justify-between  lg:px-8 px-8 container mx-auto my-2  pt-4">
+      <div class="flex items-center gap-3">
+        <div class="">
+          <div class="relative">
+            <img class="relative rounded-md" src="image/main-banner-1.jpg" alt="">
+            <div class="absolute top-10  right-10">
+              <div class=" bg-[#EC233B] rounded-full w-60 text-sm px-4  py-2 text-[#FFFFFF]  uppercase">
+                <p>Welcome to autogear</p>
+              </div>
+              <h1 class="text-[#FFFFFF] text-5xl font-bold pt-8 ">Parts For All <br> makes And <br> models</h1>
+              <p class="text-[#FFFFFF] py-6">This week only for world premier</p>
+              <div class=" bg-[#EC233B] rounded-md w-30 text-sm py-3  text-[#FFFFFF]    gap-2 uppercase">
+                <p class="text-center">Shop Now</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class=" ">
+          <div class="relative">
+            <img class="relative rounded-md" src="image/sub-banner-1.jpg" alt="">
+            <div class="absolute top-4 right-3">
+              <div class=" bg-[#EC233B] rounded-full w-35 text-[10px] px-2 py-1 text-[#FFFFFF]  uppercase">
+                <p>Welcome to autogear</p>
+              </div>
+              <h1 class="text-[#111111] text-1xl font-bold py-2 ">Make Vision <br> Headlight</h1>
+              <p class="text-sm underline">Shop Now</p>
+            </div>
+          </div>
+          <div class="relative my-4">
+            <img class="relative rounded-md" src="image/sub-banner-2.jpg" alt="">
+            <div class="absolute top-4 left-6">
+              <div class=" bg-[#EC233B] rounded-full w-30 text-[12px] px-2 py-1 text-[#FFFFFF]  uppercase">
+                <p>SAVE 15% off</p>
+              </div>
+              <h1 class="text-[#111111] text-1xl font-bold pt-2 py-3"> Basic Classic <br> Sports car </h1>
+              <p class="text-sm underline">Shop Now</p>
+            </div>
+          </div>
+          <div class="relative">
+            <img class="relative rounded-md" src="image/sub-banner-3.jpg" alt="">
+            <div class="absolute top-4 right-7 ">
+              <div class=" bg-[#EC233B] rounded-full w-30 text-[11px] px-4 py-1 text-[#FFFFFF]  uppercase">
+                <p>SAVE 20% off</p>
+              </div>
+              <h1 class="text-[#111111] text-1xl font-bold py-2 ">Wheel Cover <br> For Maruti</h1>
+              <p class="underline">Shop Now</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-7 mt-5 gap-4">
+        <div class=" p-7 border rounded-md border-gray-200">
+          <img src="image/4.jpg" alt="">
+        </div>
+        <div class=" p-7 border rounded-md border-gray-200">
+          <img src="image/4.jpg" alt="">
+        </div>
+        <div class=" p-7 border rounded-md border-gray-200">
+          <img src="image/4.jpg" alt="">
+        </div>
+        <div class=" p-7 border rounded-md border-gray-200">
+          <img src="image/4.jpg" alt="">
+        </div>
+        <div class=" p-7 border rounded-md border-gray-200">
+          <img src="image/4.jpg" alt="">
+        </div>
+        <div class=" p-7 border rounded-md border-gray-200">
+          <img src="image/4.jpg" alt="">
+        </div>
+        <div class=" p-7 border rounded-md border-gray-200">
+          <img src="image/4.jpg" alt="">
+        </div>
+      </div>
+    </section>
+    <!-- second section -->
+    <section class="container mx-auto px-8 mt-7 mb-4  ">
+      <div class="border-b border-gray-200 flex items-center justify-between pb-3">
+        <h1 class="text-[#111111] text-2xl font-semibold ">Deal Of The Week</h1>
+        <div class="flex items-center gap-2">
+          <div class="w-7 h-7 pl-1.5 rounded-md hover:bg-[#FF014F] cursor-pointer  bg-[#b3aeae] ">
+            <i class="fa-solid fa-angle-left text-white text-[11px]"></i>
+          </div>
+          <div class="w-7 h-7 pl-1.5 rounded-md hover:bg-[#FF014F] cursor-pointer  bg-[#cdcaca] ">
+            <i class="fa-solid fa-angle-right text-white text-[11px]"></i>
+          </div>
+        </div>
+      </div>
+      <div class="grid grid-cols-3  gap-2 py-4">
+        <div class="flex items-center justify-between px-4 py-2 border-2 rounded-md border-[#EC233B]">
+          <img class="w-40" src="image/olly-rose-large-ceramic-planter-shallow-plant-pot.jpg" alt="">
+          <div>
+            <h1 class="text-[#111111] text-1xl font-medium">Technaxx Car Alerm <br> with Charging</h1>
+            <div class="flex items-center py-1">
+              <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+              <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+              <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+              <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+              <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+              <p>(4)</p>
+            </div>
+            <p class="text-[#EC233B] font-semibold"><span class="text-[#c5c5c5] line-through">45.00</span> 40.50</p>
+            <div class="flex items-center my-2 gap-1 w-42 border-2  px-2 py-1 border-gray-300 rounded-md">
+              <p class="border-r border-gray-700 pr-2 text-[13px] text-gray-400"><span
+                  class="text-[#111111] font-semibold pl-2 text-sM">817</span> <br> DAYS</p>
+              <p class="border-r border-gray-700 pr-2 text-[13px] text-gray-400"><span
+                  class="text-[#111111] font-semibold pl-2 text-sm">09</span> <br> HRS</p>
+              <p class="border-r border-gray-700 pr-2 text-[13px] text-gray-400"><span
+                  class="text-[#111111] font-semibold pl-2 text-sM">26</span> <br> MIN</p>
+              <p class=" pr-2 text-gray-400 text-[13px]"><span
+                  class="text-[#EC233B] font-semibold pl-2 text-sm">40</span> <br> SEC</p>
+            </div>
+            <div class=" bg-[#EC233B] rounded-md w-30 text-sm py-2  text-[#FFFFFF]    gap-2 uppercase">
+              <p class="text-center">Add To Cart</p>
+            </div>
+          </div>
+        </div>
+        <div class="flex items-center justify-between border-2 px-4 py-2 rounded-md border-[#EC233B]">
+          <img class="w-40" src="image/olly-rose-large-ceramic-planter-shallow-plant-pot.jpg" alt="">
+          <div>
+            <h1 class="text-[#111111] text-1xl font-medium">Technaxx Car Alerm <br> with Charging</h1>
+            <div class="flex items-center py-1">
+              <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+              <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+              <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+              <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+              <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+              <p>(4)</p>
+            </div>
+            <p class="text-[#EC233B] font-semibold"><span class="text-[#c5c5c5] line-through">45.00</span> 40.50</p>
+            <div class="flex items-center my-2 gap-1 w-42 border-2  px-2 py-1 border-gray-300 rounded-md">
+              <p class="border-r border-gray-700 pr-2 text-[13px] text-gray-400"><span
+                  class="text-[#111111] font-semibold pl-2 text-sM">817</span> <br> DAYS</p>
+              <p class="border-r border-gray-700 pr-2 text-[13px] text-gray-400"><span
+                  class="text-[#111111] font-semibold pl-2 text-sm">09</span> <br> HRS</p>
+              <p class="border-r border-gray-700 pr-2 text-[13px] text-gray-400"><span
+                  class="text-[#111111] font-semibold pl-2 text-sM">26</span> <br> MIN</p>
+              <p class=" pr-2 text-gray-400 text-[13px]"><span
+                  class="text-[#EC233B] font-semibold pl-2 text-sm">40</span> <br>SEC</p>
+            </div>
+            <div class=" bg-[#EC233B] rounded-md w-30 text-sm py-2  text-[#FFFFFF]    gap-2 uppercase">
+              <p class="text-center">Add To Cart</p>
+            </div>
+          </div>
+        </div>
+        <div class="flex items-center justify-between border-2 px-4 py-2 rounded-md border-[#EC233B]">
+          <img class="w-40" src="image/olly-rose-large-ceramic-planter-shallow-plant-pot.jpg" alt="">
+          <div>
+            <h1 class="text-[#111111] text-1xl font-medium">Technaxx Car Alerm <br> with Charging</h1>
+            <div class="flex items-center py-1">
+              <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+              <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+              <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+              <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+              <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+              <p>(4)</p>
+            </div>
+            <p class="text-[#EC233B] font-semibold"><span class="text-[#c5c5c5] line-through">45.00</span> 40.50</p>
+            <div class="flex items-center my-2 gap-1 w-42 border-2  px-2 py-1 border-gray-300 rounded-md">
+              <p class="border-r border-gray-700 pr-2 text-[13px] text-gray-400"><span
+                  class="text-[#111111] font-semibold pl-2 text-sM">817</span> <br> DAYS</p>
+              <p class="border-r border-gray-700 pr-2 text-[13px] text-gray-400"><span
+                  class="text-[#111111] font-semibold pl-2 text-sm">09</span> <br> HRS</p>
+              <p class="border-r border-gray-700 pr-2 text-[13px] text-gray-400"><span
+                  class="text-[#111111] font-semibold pl-2 text-sM">26</span> <br> MIN</p>
+              <p class=" pr-2 text-gray-400 text-[13px]"><span
+                  class="text-[#EC233B] font-semibold pl-2 text-sm">40</span> <br> SEC</p>
+            </div>
+            <div class=" bg-[#EC233B] rounded-md w-30 text-sm py-2  text-[#FFFFFF]    gap-2 uppercase">
+              <p class="text-center">Add To Cart</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+    <!-- third section -->
+    <section class="container mx-auto px-8 mt-7 mb-4  ">
+      <div class="border-b border-gray-200  flex items-center justify-between pb-3">
+        <h1 class="text-[#111111] text-2xl font-semibold ">Deal Of The Week</h1>
+        <div class="flex items-center gap-4">
+          <p class="hover:text-[#EC233B] text-[#111111] "> ACCESSORIES</p>
+          <p class="hover:text-[#EC233B] text-[#111111] "> BODY PARTS</p>
+          <p class="hover:text-[#EC233B] text-[#111111] "> AUTO PARTS</p>
+        </div>
+      </div>
+      <div class="grid grid-cols-6 gap-3 py-4">
+        <div class=" px-4 py-2 border rounded-md border-gray-300">
+          <img class="w-40" src="image/front-brake-disk-brake-pads-for-yamaha-vino.jpg" alt="">
+          <div>
+            <p class="text-[#666666]">StyleHub</p>
+            <h1 class="text-[#111111] text-1xl font-medium py-1">Front Brake Disk + <br> Brake Pads For</h1>
+            <div class="flex items-center py-1">
+              <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+              <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+              <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+              <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+              <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+              <p>(2)</p>
+            </div>
+            <p class="text-[#EC233B] font-semibold">$ 110.50</p>
+
+            <div
+              class=" hover:bg-[#EC233B] bg-gray-200 text-[#111111] rounded-md w-30 text-sm py-2  hover:text-[#FFFFFF]   my-2  gap-2 uppercase">
+              <p class="text-center">Add To Cart</p>
+            </div>
+          </div>
+        </div>
+        <div class=" px-4 py-2 border rounded-md border-gray-300">
+          <img class="w-40" src="image/front-brake-disk-brake-pads-for-yamaha-vino.jpg" alt="">
+          <div>
+            <p class="text-[#666666]">StyleHub</p>
+            <h1 class="text-[#111111] text-1xl font-medium py-1">Front Brake Disk + <br> Brake Pads For</h1>
+            <div class="flex items-center py-1">
+              <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+              <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+              <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+              <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+              <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+              <p>(2)</p>
+            </div>
+            <p class="text-[#EC233B] font-semibold">$ 110.50</p>
+
+            <div
+              class=" hover:bg-[#EC233B] bg-gray-200 text-[#111111] rounded-md w-30 text-sm py-2  hover:text-[#FFFFFF]   my-2  gap-2 uppercase">
+              <p class="text-center">Add To Cart</p>
+            </div>
+          </div>
+        </div>
+        <div class=" px-4 py-2 border rounded-md border-gray-300">
+          <img class="w-40" src="image/front-brake-disk-brake-pads-for-yamaha-vino.jpg" alt="">
+          <div>
+            <p class="text-[#666666]">StyleHub</p>
+            <h1 class="text-[#111111] text-1xl font-medium py-1">Front Brake Disk + <br> Brake Pads For</h1>
+            <div class="flex items-center py-1">
+              <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+              <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+              <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+              <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+              <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+              <p>(2)</p>
+            </div>
+            <p class="text-[#EC233B] font-semibold">$ 110.50</p>
+
+            <div
+              class=" hover:bg-[#EC233B] bg-gray-200 text-[#111111] rounded-md w-30 text-sm py-2  hover:text-[#FFFFFF]   my-2  gap-2 uppercase">
+              <p class="text-center">Add To Cart</p>
+            </div>
+          </div>
+        </div>
+        <div class=" px-4 py-2 border rounded-md border-gray-300">
+          <img class="w-40" src="image/front-brake-disk-brake-pads-for-yamaha-vino.jpg" alt="">
+          <div>
+            <p class="text-[#666666]">StyleHub</p>
+            <h1 class="text-[#111111] text-1xl font-medium py-1">Front Brake Disk + <br> Brake Pads For</h1>
+            <div class="flex items-center py-1">
+              <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+              <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+              <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+              <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+              <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+              <p>(2)</p>
+            </div>
+            <p class="text-[#EC233B] font-semibold">$ 110.50</p>
+
+            <div
+              class=" hover:bg-[#EC233B] bg-gray-200 text-[#111111] rounded-md w-30 text-sm py-2  hover:text-[#FFFFFF]   my-2  gap-2 uppercase">
+              <p class="text-center">Add To Cart</p>
+            </div>
+          </div>
+        </div>
+        <div class=" px-4 py-2 border rounded-md border-gray-300">
+          <img class="w-40" src="image/front-brake-disk-brake-pads-for-yamaha-vino.jpg" alt="">
+          <div>
+            <p class="text-[#666666]">StyleHub</p>
+            <h1 class="text-[#111111] text-1xl font-medium py-1">Front Brake Disk + <br> Brake Pads For</h1>
+            <div class="flex items-center py-1">
+              <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+              <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+              <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+              <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+              <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+              <p>(2)</p>
+            </div>
+            <p class="text-[#EC233B] font-semibold">$ 110.50</p>
+
+            <div
+              class=" hover:bg-[#EC233B] bg-gray-200 text-[#111111] rounded-md w-30 text-sm py-2  hover:text-[#FFFFFF]   my-2  gap-2 uppercase">
+              <p class="text-center">Add To Cart</p>
+            </div>
+          </div>
+        </div>
+        <div class=" px-4 py-2 border rounded-md border-gray-300">
+          <img class="w-40" src="image/front-brake-disk-brake-pads-for-yamaha-vino.jpg" alt="">
+          <div>
+            <p class="text-[#666666]">StyleHub</p>
+            <h1 class="text-[#111111] text-1xl font-medium py-1">Front Brake Disk + <br> Brake Pads For</h1>
+            <div class="flex items-center py-1">
+              <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+              <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+              <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+              <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+              <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+              <p>(2)</p>
+            </div>
+            <p class="text-[#EC233B] font-semibold">$ 110.50</p>
+
+            <div
+              class=" hover:bg-[#EC233B] bg-gray-200 text-[#111111] rounded-md w-30 text-sm py-2  hover:text-[#FFFFFF]   my-2  gap-2 uppercase">
+              <p class="text-center">Add To Cart</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- fourth section -->
+    <section class="container mx-auto px-8 mt-7 mb-4 flex items-center gap-2 ">
+      <div class="relative">
+        <img class="relative rounded-md" src="image/cms-banner-1.jpg" alt="">
+        <div class="absolute top-4 right-8 ">
+          <div class=" bg-[#EC233B] rounded-full w-40 text-[14px] px-4 py-1 text-[#FFFFFF]  uppercase">
+            <p>UP To 50% off</p>
+          </div>
+          <h1 class="text-[#ffffff] text-3xl font-bold py-2 ">Autos chevrolot <br> Spark 2016</h1>
+          <p class="text-[#ffffff]">Spark limited Edition Lunched</p>
+        </div>
+      </div>
+      <div class="relative">
+        <img class="relative rounded-md" src="image/cms-banner-2.jpg" alt="">
+        <div class="absolute top-4 right-8 ">
+          <div class=" bg-[#EC233B] rounded-full w-40 text-[14px] px-4 py-1 text-[#FFFFFF]  uppercase">
+            <p>UP To 30% off</p>
+          </div>
+          <h1 class="text-[#ffffff] text-3xl font-bold py-2 ">Autos chevrolot <br> Spark 2016</h1>
+          <p class="text-[#ffffff]">Spark limited Edition Lunched</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- five section -->
+    <section class="container mx-auto px-8 mt-7 mb-4 bg-[#FAF6F2] py-7  ">
+      <div class="border-b border-gray-300 flex items-center justify-between pb-3">
+        <h1 class="text-[#111111] text-2xl font-semibold ">Shop By Categories</h1>
+        <div class="flex items-center gap-2">
+          <div class="w-7 h-7 pl-1.5 rounded-md hover:bg-[#FF014F] cursor-pointer  bg-[#b3aeae] ">
+            <i class="fa-solid fa-angle-left text-white text-[11px]"></i>
+          </div>
+          <div class="w-7 h-7 pl-1.5 rounded-md hover:bg-[#FF014F] cursor-pointer  bg-[#cdcaca] ">
+            <i class="fa-solid fa-angle-right text-white text-[11px]"></i>
+          </div>
+        </div>
+      </div>
+      <div class="grid grid-cols-7 gap-4 my-3">
+        <div class="  p-2">
+          <div class="">
+            <img class="rounded-full border border-gray-200" src="image/cat-1.jpg" alt="">
+          </div>
+          <div class="my-5">
+            <p class="text-[#111111] text-1xl text-center  font-semibold">Brakes & Rotors</p>
+          </div>
+        </div>
+        <div class=" p-2">
+          <div class="">
+            <img class="rounded-full border border-gray-200" src="image/cat-1.jpg" alt="">
+          </div>
+          <div class="py-5">
+            <p class="text-[#111111] text-1xl text-center  font-semibold">Brakes & Rotors</p>
+          </div>
+        </div>
+        <div class=" p-2 ">
+          <div class="">
+            <img class="rounded-full border border-gray-200" src="image/cat-1.jpg" alt="">
+          </div>
+          <div class="py-5">
+            <p class="text-[#111111] text-1xl text-center  font-semibold">Brakes & Rotors</p>
+          </div>
+        </div>
+        <div class=" p-2 ">
+          <div class="">
+            <img class="rounded-full border border-gray-200" src="image/cat-1.jpg" alt="">
+          </div>
+          <div class="py-5">
+            <p class="text-[#111111] text-1xl text-center  font-semibold">Brakes & Rotors</p>
+          </div>
+        </div>
+        <div class="p-2">
+          <div class="">
+            <img class="rounded-full border border-gray-200" src="image/cat-1.jpg" alt="">
+          </div>
+          <div class="py-5">
+            <p class="text-[#111111] text-1xl text-center  font-semibold">Brakes & Rotors</p>
+          </div>
+        </div>
+        <div class=" p-2">
+          <div class="">
+            <img class="rounded-full border border-gray-200" src="image/cat-1.jpg" alt="">
+          </div>
+          <div class="py-5">
+            <p class="text-[#111111] text-1xl text-center  font-semibold">Brakes & Rotors</p>
+          </div>
+        </div>
+        <div class=" p-2 ">
+          <div class="">
+            <img class="rounded-full border border-gray-200" src="image/cat-1.jpg" alt="">
+          </div>
+          <div class="py-5">
+            <p class="text-[#111111] text-1xl text-center  font-semibold">Brakes & Rotors</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- six section -->
+    <section class="container mx-auto px-8 mt-7 mb-4  py-7  grid grid-cols-3  gap-4">
+      <div class="relative ">
+        <img class="relative rounded-md" src="image/sub-banner-4.jpg" alt="">
+        <div class="absolute top-5 right-9">
+          <div class=" bg-[#EC233B] rounded-full w-30 text-[12px] px-2 py-1 text-[#ffffff]  uppercase">
+            <p>SAVE 15% off</p>
+          </div>
+          <h1 class="text-[#111111] text-2xl font-bold pt-2 py-3"> Basic Classic <br> Sports car </h1>
+          <p class="text-sm underline">Shop Now</p>
+        </div>
+      </div>
+      <div class="relative ">
+        <img class="relative rounded-md" src="image/sub-banner-4.jpg" alt="">
+        <div class="absolute top-4 right-9">
+          <div class=" bg-[#EC233B] rounded-full w-30 text-[12px] px-2 py-1 text-[#ffffff]  uppercase">
+            <p>SAVE 15% off</p>
+          </div>
+          <h1 class="text-[#111111] text-2xl font-bold pt-2 py-3"> Basic Classic <br> Sports car </h1>
+          <p class="text-sm underline">Shop Now</p>
+        </div>
+      </div>
+      <div class="relative ">
+        <img class="relative rounded-md" src="image/sub-banner-4.jpg" alt="">
+        <div class="absolute top-4 right-8">
+          <div class=" bg-[#EC233B] rounded-full w-30 text-[12px] px-2 py-1 text-[#ffffff]  uppercase">
+            <p>SAVE 15% off</p>
+          </div>
+          <h1 class="text-[#111111] text-2xl font-bold pt-2 py-3"> Basic Classic <br> Sports car </h1>
+          <p class="text-sm underline">Shop Now</p>
+        </div>
+      </div>
+    </section>
+    <!-- seven part -->
+    <section class="container mx-auto px-8 mt-7 mb-4  ">
+      <div class="border-b border-gray-200 flex items-center justify-between pb-3">
+        <h1 class="text-[#111111] text-2xl font-semibold ">Featured Product</h1>
+        <div class="flex items-center gap-2">
+          <div class="w-7 h-7 pl-1.5 rounded-md hover:bg-[#FF014F] cursor-pointer  bg-[#b3aeae] ">
+            <i class="fa-solid fa-angle-left text-white text-[11px]"></i>
+          </div>
+          <div class="w-7 h-7 pl-1.5 rounded-md hover:bg-[#FF014F] cursor-pointer  bg-[#cdcaca] ">
+            <i class="fa-solid fa-angle-right text-white text-[11px]"></i>
+          </div>
+        </div>
+      </div>
+      <div class="grid grid-cols-6 gap-3 py-4">
+
+        <div class=" px-4 py-2 border rounded-md border-gray-300">
+          <img class="w-40" src="image/calandis-modern-white-ceramic-flower-vase.jpg" alt="">
+          <div>
+            <p class="text-[#666666]">Ecomzone</p>
+            <h1 class="text-[#111111] text-1xl font-medium py-1">OMP car steering <br> Aluminium Spacer...</h1>
+            <div class="flex items-center py-1">
+              <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+              <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+              <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+              <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+              <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+              <p>(2)</p>
+            </div>
+            <p class="text-[#EC233B] font-semibold">$ 110.50</p>
+
+            <div
+              class=" hover:bg-[#EC233B] bg-gray-200 text-[#111111] rounded-md w-30 text-sm py-2  hover:text-[#FFFFFF]   my-2  gap-2 uppercase">
+              <p class="text-center">Add To Cart</p>
+            </div>
+          </div>
+        </div>
+        <div class=" px-4 py-2 border rounded-md border-gray-300">
+          <img class="w-40" src="image/calandis-modern-white-ceramic-flower-vase.jpg" alt="">
+          <div>
+            <p class="text-[#666666]">Ecomzone</p>
+            <h1 class="text-[#111111] text-1xl font-medium py-1">OMP car steering <br> Aluminium Spacer...</h1>
+            <div class="flex items-center py-1">
+              <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+              <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+              <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+              <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+              <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+              <p>(2)</p>
+            </div>
+            <p class="text-[#EC233B] font-semibold">$ 110.50</p>
+
+            <div
+              class=" hover:bg-[#EC233B] bg-gray-200 text-[#111111] rounded-md w-30 text-sm py-2  hover:text-[#FFFFFF]   my-2  gap-2 uppercase">
+              <p class="text-center">Add To Cart</p>
+            </div>
+          </div>
+        </div>
+        <div class=" px-4 py-2 border rounded-md border-gray-300">
+          <img class="w-40" src="image/calandis-modern-white-ceramic-flower-vase.jpg" alt="">
+          <div>
+            <p class="text-[#666666]">Ecomzone</p>
+            <h1 class="text-[#111111] text-1xl font-medium py-1">OMP car steering <br> Aluminium Spacer...</h1>
+            <div class="flex items-center py-1">
+              <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+              <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+              <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+              <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+              <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+              <p>(2)</p>
+            </div>
+            <p class="text-[#EC233B] font-semibold">$ 110.50</p>
+
+            <div
+              class=" hover:bg-[#EC233B] bg-gray-200 text-[#111111] rounded-md w-30 text-sm py-2  hover:text-[#FFFFFF]   my-2  gap-2 uppercase">
+              <p class="text-center">Add To Cart</p>
+            </div>
+          </div>
+        </div>
+        <div class=" px-4 py-2 border rounded-md border-gray-300">
+          <img class="w-40" src="image/calandis-modern-white-ceramic-flower-vase.jpg" alt="">
+          <div>
+            <p class="text-[#666666]">Ecomzone</p>
+            <h1 class="text-[#111111] text-1xl font-medium py-1">OMP car steering <br> Aluminium Spacer...</h1>
+            <div class="flex items-center py-1">
+              <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+              <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+              <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+              <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+              <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+              <p>(2)</p>
+            </div>
+            <p class="text-[#EC233B] font-semibold">$ 110.50</p>
+
+            <div
+              class=" hover:bg-[#EC233B] bg-gray-200 text-[#111111] rounded-md w-30 text-sm py-2  hover:text-[#FFFFFF]   my-2  gap-2 uppercase">
+              <p class="text-center">Add To Cart</p>
+            </div>
+          </div>
+        </div>
+        <div class=" px-4 py-2 border rounded-md border-gray-300">
+          <img class="w-40" src="image/calandis-modern-white-ceramic-flower-vase.jpg" alt="">
+          <div>
+            <p class="text-[#666666]">Ecomzone</p>
+            <h1 class="text-[#111111] text-1xl font-medium py-1">OMP car steering <br> Aluminium Spacer...</h1>
+            <div class="flex items-center py-1">
+              <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+              <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+              <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+              <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+              <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+              <p>(2)</p>
+            </div>
+            <p class="text-[#EC233B] font-semibold">$ 110.50</p>
+
+            <div
+              class=" hover:bg-[#EC233B] bg-gray-200 text-[#111111] rounded-md w-30 text-sm py-2  hover:text-[#FFFFFF]   my-2  gap-2 uppercase">
+              <p class="text-center">Add To Cart</p>
+            </div>
+          </div>
+        </div>
+        <div class=" px-4 py-2 border rounded-md border-gray-300">
+          <img class="w-40" src="image/calandis-modern-white-ceramic-flower-vase.jpg" alt="">
+          <div>
+            <p class="text-[#666666]">Ecomzone</p>
+            <h1 class="text-[#111111] text-1xl font-medium py-1">OMP car steering <br> Aluminium Spacer...</h1>
+            <div class="flex items-center py-1">
+              <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+              <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+              <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+              <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+              <i class="fa-solid text-[#FFAB00]  fa-star"></i>
+              <p>(2)</p>
+            </div>
+            <p class="text-[#EC233B] font-semibold">$ 110.50</p>
+
+            <div
+              class=" hover:bg-[#EC233B] bg-gray-200 text-[#111111] rounded-md w-30 text-sm py-2  hover:text-[#FFFFFF]   my-2  gap-2 uppercase">
+              <p class="text-center">Add To Cart</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- eight part -->
+    <section class="container mx-auto px-8 mt-7 mb-4  ">
+      <div class="relative ">
+        <img class="relative rounded-md" src="image/cms-banner-3.jpg" alt="">
+        <div class="absolute top-5 right-30">
+          <div class=" bg-[#EC233B] rounded-full w-40 text-[12px] px-2 py-1 text-[#ffffff]  uppercase">
+            <p>SYNLING 50% TRANDING</p>
+          </div>
+          <h1 class="text-[#ffffff] text-2xl font-bold pt-2 py-3"> Shop Luxurious Sport Car <br> Accessories</h1>
+
+        </div>
+      </div>
+    </section>
+    <!-- nine part -->
+    <section class="container mx-auto px-8 mt-7 mb-4  ">
+      <div class="border-b border-gray-200 flex items-center justify-between pb-3">
+        <h1 class="text-[#111111] text-2xl font-semibold">Clients Feedback</h1>
+        <div class="flex items-center gap-2">
+          <div class="w-7 h-7 pl-1.5 rounded-md hover:bg-[#FF014F] cursor-pointer  bg-[#b3aeae] ">
+            <i class="fa-solid fa-angle-left text-white text-[11px]"></i>
+          </div>
+          <div class="w-7 h-7 pl-1.5 rounded-md hover:bg-[#FF014F] cursor-pointer  bg-[#cdcaca] ">
+            <i class="fa-solid fa-angle-right text-white text-[11px]"></i>
+          </div>
+        </div>
+      </div>
+      <div class="flex items-center gap-3 my-4">
+        <div class="border border-gray-300 rounded-md p-4">
+          <div class="flex items-center gap-3">
+            <img class="rounded-full" src="image/testimonial-1.jpg" alt="">
+            <div c>
+              <h1 class="text-[#111111] text-1xl">Stefanie Rashpord</h1>
+              <p class="text-[#666666]">Web Designer</p>
+            </div>
+          </div>
+          <p class="text-[#666666] text-sm mt-5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia delectus
+            praesentium adipisci dolor aliquid illum exercitationem distinctio et accusamus fugit.</p>
+        </div>
+        <div class="border border-gray-300 rounded-md p-4">
+          <div class="flex items-center gap-3">
+            <img class="rounded-full" src="image/testimonial-1.jpg" alt="">
+            <div>
+              <h1 class="text-[#111111] text-1xl">Stefanie Rashpord</h1>
+              <p class="text-[#666666]">Web Designer</p>
+            </div>
+          </div>
+          <p class="text-[#666666] text-sm mt-5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia delectus
+            praesentium adipisci dolor aliquid illum exercitationem distinctio et accusamus fugit.</p>
+        </div>
+        <div class="border border-gray-300 rounded-md p-4">
+          <div class="flex items-center gap-3">
+            <img class="rounded-full" src="image/testimonial-1.jpg" alt="">
+            <div>
+              <h1 class="text-[#111111] text-1xl">Stefanie Rashpord</h1>
+              <p class="text-[#666666]">Web Designer</p>
+            </div>
+          </div>
+          <p class="text-[#666666] text-sm mt-5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia delectus
+            praesentium adipisci dolor aliquid illum exercitationem distinctio et accusamus fugit.</p>
+        </div>
+      </div>
+    </section>
+    <!-- ten section -->
+    <section class="container mx-auto px-8 mt-7 mb-4 ">
+      <div class="border-b border-gray-200 flex items-center justify-between pb-3">
+        <h1 class="text-[#111111] text-2xl font-semibold">Clients Feedback</h1>
+        <div class="flex items-center gap-2">
+          <div class="w-7 h-7 pl-1.5 rounded-md hover:bg-[#FF014F] cursor-pointer  bg-[#b3aeae] ">
+            <i class="fa-solid fa-angle-left text-white text-[11px]"></i>
+          </div>
+          <div class="w-7 h-7 pl-1.5 rounded-md hover:bg-[#FF014F] cursor-pointer  bg-[#cdcaca] ">
+            <i class="fa-solid fa-angle-right text-white text-[11px]"></i>
+          </div>
+        </div>
+      </div>
+      <div class="flex items-center gap-4 my-4">
+        <div class="">
+          <img class="rounded-md" src="image/blog-01.jpg" alt="">
+          <p class="text-[#111111] text-[1xl] my-3 font-medium">How to Write a Blog Post Your <br> Readers Will Love in
+            5 Steps</p>
+        </div>
+        <div class="">
+          <img class="rounded-md" src="image/blog-01.jpg" alt="">
+          <p class="text-[#111111] text-[1xl] my-3 font-medium">How to Write a Blog Post Your <br> Readers Will Love in
+            5 Steps</p>
+        </div>
+        <div class="">
+          <img class="rounded-md" src="image/blog-01.jpg" alt="">
+          <p class="text-[#111111] text-[1xl] my-3 font-medium">How to Write a Blog Post Your <br> Readers Will Love in
+            5 Steps</p>
+        </div>
+        <div class="">
+          <img class="rounded-md" src="image/blog-01.jpg" alt="">
+          <p class="text-[#111111] text-[1xl] my-3 font-medium">How to Write a Blog Post Your <br> Readers Will Love in
+            5 Steps</p>
+        </div>
+      </div>
+    </section>
+    <!-- eleven section -->
+    <section class="container mx-auto px-8 mt-7 mb-4  ">
+      <div class=" grid grid-cols-6 gap-3 mt-5 mb-3">
+        <img class="rounded-md" src="image/insta-03.jpg" alt="">
+        <img class="rounded-md" src="image/insta-03.jpg" alt="">
+        <img class="rounded-md" src="image/insta-03.jpg" alt="">
+        <img class="rounded-md" src="image/insta-03.jpg" alt="">
+        <img class="rounded-md" src="image/insta-03.jpg" alt="">
+        <img class="rounded-md" src="image/insta-03.jpg" alt="">
+
+      </div>
+
+    </section>
+    <div class="bg-[#EC233B] flex items-center gap-10  container mx-auto px-8 py-9 pl-40">
+      <div class="flex items-center gap-3 border-r border-[#ffffff] pr-20">
+        <i class="fa-solid text-white text-4xl fa-circle-dollar-to-slot"></i>
+        <div class="text-[#ffffff]">
+          <h1>
+            Money Back Guarantee
+          </h1>
+          <p class="text-sm">Back returns in 7 days</p>
+        </div>
+      </div>
+      <div class="flex items-center gap-3 border-r border-[#ffffff] pr-20">
+        <i class="fa-solid text-white text-4xl fa-circle-dollar-to-slot"></i>
+        <div class="text-[#ffffff]">
+          <h1>
+            Offers $ Discount
+          </h1>
+          <p class="text-sm">Back returns in 7 days</p>
+        </div>
+      </div>
+      <div class="flex items-center gap-3 border-r border-[#ffffff] pr-20">
+        <i class="fa-solid text-white text-4xl fa-circle-dollar-to-slot"></i>
+        <div class="text-[#ffffff]">
+          <h1>
+            Worlwide Shipping
+          </h1>
+          <p class="text-sm">Back returns in 7 days</p>
+        </div>
+      </div>
+    </div>
+
+    <!--  -->
+
+  </main>
+  <footer class="bg-[#212529]">
+    <div class="container    mx-auto px-8 py-8">
+      <div class="flex items-center justify-between pb-9  pt-7 ">
+        <!-- first -->
+        <div class="text-[#DFDFE0] text-[13px] mt-2">
+          <h1 class=" font-semibold text-[#ffffff] text-[20px]">Contact Us</h1>
+          <p class=" cursor-pointer pt-4">Autogear Demo <br>
+            507-Union Trade Centre, USA <br> 12345, Beside the Sun point <br> land. <br>
+            United States</p>
+
+          <p class=" cursor-pointer">Email us: admin@example.com</p>
+          <div class="flex items-center gap-1 mt-4"> <img src="image/app.png" alt=""><img src="image/google.png" alt="">
+          </div>
+        </div>
+        <!-- second -->
+        <div class="text-[#DFDFE0] text-[13px]">
+          <h1 class="pb-6 font-semibold text-[#ffffff] text-[20px]">Products</h1>
+          <p class=" cursor-pointer">Prices Drops</p>
+          <p class="py-2  cursor-pointer">New Products</p>
+          <p class=" cursor-pointer">Best Sellers</p>
+          <p class="py-2  cursor-pointer">Site Map </p>
+          <p class=" cursor-pointer">Stores</p>
+          <p class=" cursor-pointer py-2">GearBox</p>
+        </div>
+        <div class="text-[#DFDFE0] text-[13px]">
+          <h1 class="pb-6 font-semibold text-[#ffffff] text-[20px]">Our Company</h1>
+          <p class=" cursor-pointer">Delivery</p>
+          <p class="py-2   cursor-pointer">Legal Notice</p>
+          <p class="  cursor-pointer">Terms & Condition</p>
+          <p class="py-2  cursor-pointer">SEcure Payment </p>
+          <p class="  cursor-pointer">Contact Us</p>
+          <p class="  cursor-pointer py-2">About Us</p>
+        </div>
+        <div class="text-[#DFDFE0] text-[13px]">
+          <h1 class="pb-6 font-semibold text-[#ffffff] text-[20px]">Your Account</h1>
+          <p class=" cursor-pointer">Order Tracking</p>
+          <p class="py-2  cursor-pointer">Sign In</p>
+          <p class="  cursor-pointer">Create Account</p>
+          <p class="py-2  cursor-pointer">Vouchers </p>
+          <p class="  cursor-pointer">Credit Slip</p>
+          <p class="  cursor-pointer py-2">wishlist</p>
+        </div>
+        <!-- third -->
+        <div>
+          <h1 class=" font-semibold pb-6 text-[#ffffff] text-[20px]">Get Our Latest Update</h1>
+          <p class="text-[#DFDFE0]  cursor-pointer  text-[13px]">Subscribe to our latest newsletter <br> discount <br>
+          </p>
+          <p class="text-[#DFDFE0] py-2 text-[13px]">get news about special</p>
+          <p class="py-2  text-[#DFDFE0] text-[13px]  cursor-pointer">Call us: +00 123-456-789</p>
+          <p class=" text-[#DFDFE0] text-[13px] ">3891 Ranchview Dr. Richardson</p>
+          <p class="py-2  text-[#DFDFE0] text-sm cursor-pointer">Vouchers </p>
+
+
+
+        </div>
+      </div>
+      <div class="border-t border-gray-500 flex items-center justify-between pt-2 pb-7">
+        <div class="flex items-center gap-4 py-2 mt-4">
+          <div class="w-7 h-7 pl-1.5 rounded-full  cursor-pointer  bg-[#ffffff] ">
+            <i class="fa-brands text-[#302f2f] fa-instagram text-[11px]"></i>
+          </div>
+          <div class="w-7 h-7 pl-1.5 rounded-full  cursor-pointer  bg-[#ffffff] ">
+            <i class="fa-brands text-[#302f2f]  fa-linkedin-in text-[11px]"></i>
+          </div>
+          <div class="w-7 h-7 pl-1.5 rounded-full  cursor-pointer  bg-[#ffffff] ">
+            <i class="fa-brands text-[#302f2f] fa-twitter text-[11px] "></i>
+          </div>
+          <div class="w-7 h-7 pl-1.5 rounded-full  cursor-pointer  bg-[#ffffff] ">
+            <i class="fa-brands text-[#302f2f]  fa-facebook-f text-[11px]"></i>
+          </div>
+
+
+        </div>
+        <div>
+          <p class="text-[#DFDFE0] text-[13px]">Copyright © Autogear. All Rights Reserved</p>
+        </div>
+        <div>
+          <img src="image/payment-all-6.png" alt="">
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
